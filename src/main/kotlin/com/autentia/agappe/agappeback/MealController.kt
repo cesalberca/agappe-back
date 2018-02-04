@@ -7,7 +7,7 @@ import java.util.*
 class MealController {
 
     val allMeals = mutableListOf(
-        Meal( "César Alberca", "Tortitas", Date(), 5),
+        Meal("César Alberca", "Tortitas", Date(), 5),
         Meal("Javier Sánchez", "Embutido", Date(), 5)
     )
 
