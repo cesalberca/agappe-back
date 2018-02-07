@@ -1,14 +1,15 @@
 package com.autentia.agappe.agappeback
 
 import org.springframework.web.bind.annotation.*
-import java.util.*
+import java.time.LocalDate
 
 @RestController
+@CrossOrigin(origins = ["http://localhost:3000"])
 class MealController {
 
     val allMeals = mutableListOf(
-        Meal("César Alberca", "Tortitas", Date(), 5),
-        Meal("Javier Sánchez", "Embutido", Date(), 5)
+        Meal("César Alberca", "Tortitas", "2017-4-15", 5),
+        Meal("Javier Sánchez", "Ibéricos cacereños", "2017-8-7", 4)
     )
 
     @GetMapping("/meals")

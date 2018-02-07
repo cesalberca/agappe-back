@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        kotlinVersion = '1.2.20'
+        kotlinVersion = '1.2.21'
         springBootVersion = '1.5.10.RELEASE'
     }
     repositories {
@@ -21,6 +21,7 @@ apply plugin: 'org.springframework.boot'
 group = 'com.autentia.agappe'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
+
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
@@ -38,12 +39,4 @@ dependencies {
     compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     compile("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     testCompile('org.springframework.boot:spring-boot-starter-test')
-
-    // Jackson Dependencies
-    compile "com.fasterxml.jackson.core:jackson-annotations"
-    compile "com.fasterxml.jackson.core:jackson-core"
-    compile "com.fasterxml.jackson.core:jackson-databind"
-    runtime "com.fasterxml.jackson.datatype:jackson-datatype-jdk8"
-    runtime "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
-    runtime "com.fasterxml.jackson.module:jackson-module-kotlin"
 }
