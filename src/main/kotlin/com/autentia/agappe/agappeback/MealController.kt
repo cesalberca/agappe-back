@@ -1,7 +1,6 @@
 package com.autentia.agappe.agappeback
 
 import org.springframework.web.bind.annotation.*
-import java.time.LocalDate
 
 @RestController
 @CrossOrigin(origins = ["http://localhost:3000"])
